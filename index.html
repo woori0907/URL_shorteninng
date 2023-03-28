@@ -18,14 +18,22 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/053fb83854.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="styles.css" />
     <script defer src="link_shorten.js"></script>
   </head>
   <body>
     <!-- header -->
     <section id="header">
-      <div id="header__logo" class="logo"></div>
-      <div id="header__nav_btn" class="icon"></div>
+      <div id="header__btn_wrap">
+        <div id="header__logo" class="logo">Shortly</div>
+        <div id="header__nav_btn" class="icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
       <nav id="header__nav">
         <ul class="nav__wrap">
           <li class="nav__item"><a href="#">Features</a></li>
@@ -41,7 +49,8 @@
     <!-- main -->
     <section id="main">
       <section id="main__banner" class="main__section">
-        <img src="./images/illustration-working.svg" alt="work illust" />
+        <!-- <img src="./images/illustration-working.svg" alt="work illust" /> -->
+        <div id="banner__img"></div>
         <div id="banner__description">
           <h1>More than just shorter links</h1>
           <p>
@@ -63,8 +72,8 @@
         <ul id="links__wrap"></ul>
       </section>
       <section id="main__information" class="main__section">
-        <h2>Advanced Statistics</h2>
-        <p>
+        <h2 id="info__title">Advanced Statistics</h2>
+        <p id="info__description">
           Track how your links are performing across the web with our advanced
           statistics dashboard.
         </p>
@@ -111,12 +120,12 @@
       </section>
     </section>
     <!-- footer -->
-    <footer>
-      <div id="footer__logo" class="logo"></div>
+    <footer id="footer">
+      <div id="footer__logo" class="logo">Shortly</div>
       <section id="footer__nav">
         <ul id="footer__nav__wrap">
           <li class="footer__nav__item">
-            Features
+            <span class="item__title">Features</span>
             <ul class="nav__sub_nav">
               <li class="sub_nav__item">Link Shortening</li>
               <li class="sub_nav__item">Branded Links</li>
@@ -124,7 +133,7 @@
             </ul>
           </li>
           <li class="footer__nav__item">
-            Resources
+            <span class="item__title">Resources</span>
 
             <ul class="nav__sub_nav">
               <li class="sub_nav__item">Blog</li>
@@ -133,7 +142,7 @@
             </ul>
           </li>
           <li class="footer__nav__item">
-            Company
+            <span class="item__title">Company</span>
 
             <ul class="nav__sub_nav">
               <li class="sub_nav__item">About</li>
@@ -143,21 +152,21 @@
             </ul>
           </li>
         </ul>
-        <ul id="footer__social__wrap">
-          <li class="social__item">
-            <img src="./images/icon-facebook.svg" alt="facebook icon" />
-          </li>
-          <li class="social__item">
-            <img src="./images/icon-twitter.svg" alt="twitter icon" />
-          </li>
-          <li class="social__item">
-            <img src="./images/icon-pinterest.svg" alt="pinterest icon" />
-          </li>
-          <li class="social__item">
-            <img src="./images/icon-instagram.svg" alt="instagram icon" />
-          </li>
-        </ul>
       </section>
+      <ul id="footer__social__wrap">
+        <li class="social__item">
+          <img src="./images/icon-facebook.svg" alt="facebook icon" />
+        </li>
+        <li class="social__item">
+          <img src="./images/icon-twitter.svg" alt="twitter icon" />
+        </li>
+        <li class="social__item">
+          <img src="./images/icon-pinterest.svg" alt="pinterest icon" />
+        </li>
+        <li class="social__item">
+          <img src="./images/icon-instagram.svg" alt="instagram icon" />
+        </li>
+      </ul>
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
