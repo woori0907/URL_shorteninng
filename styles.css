@@ -68,6 +68,7 @@ button {
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
   height: 45px;
+  cursor: pointer;
 }
 
 .btn__started {
@@ -194,6 +195,10 @@ p {
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
   color: var(--color-neutral-gray);
+}
+
+#form__submit {
+  border-radius: 10px;
 }
 
 .btn__service {
@@ -333,4 +338,210 @@ p {
 
 /* desktop */
 @media (min-width: 1440px) {
+  body {
+    width: 100%;
+  }
+  button {
+    height: 60px;
+    border-radius: 30px;
+  }
+  .main__section {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+  }
+  #header__nav_btn {
+    display: none;
+  }
+  #header__btn_wrap {
+    display: flex;
+    width: auto;
+    height: 50px;
+    align-items: center;
+    margin-right: 80px;
+  }
+  #header__logo {
+    font-size: var(--font-large);
+  }
+  #header__nav {
+    padding: 0px;
+    height: 100%;
+    border-radius: 0px;
+    visibility: visible;
+    position: static;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav__wrap {
+    display: flex;
+  }
+  .nav__item {
+    width: 120px;
+    height: 50px;
+    border-radius: 0px;
+    display: flex;
+    border-radius: 25px;
+  }
+  .nav__item a {
+    color: #333;
+  }
+  .nav__item:hover a {
+    color: white;
+    font-weight: var(--weight-bold);
+  }
+
+  #main__banner {
+    width: 100%;
+    height: 720px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    overflow: visible;
+    background-image: url("./images/illustration-working.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  #banner__img {
+    display: none;
+  }
+  #banner__description {
+    width: 1280px;
+    margin: 0 auto;
+    text-align: left;
+    padding-right: 100px;
+  }
+  #banner__description h1 {
+    font-size: var(--font-very-large);
+    width: 50%;
+  }
+  #banner__description p {
+    font-size: var(--font-regular);
+    width: 50%;
+  }
+  #form__link {
+    width: 1280px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    align-items: center;
+    padding: 50px;
+    background-image: url("./images/bg-shorten-desktop.svg");
+    background-position: right top;
+    margin-bottom: 40px;
+  }
+  #input__link {
+    margin-bottom: 0;
+    margin-right: 30px;
+    width: 85%;
+    height: 60px;
+    font-size: var(--font-regular);
+  }
+  #form__submit {
+    width: 15%;
+  }
+  #links__wrap {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .link__item {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    align-items: center;
+  }
+  .item__origin,
+  .item__shorten {
+    margin-bottom: 10px;
+    height: 45px;
+    font-weight: var(--weight-medium);
+    font-size: var(--font-regular);
+  }
+  .item__origin {
+    flex: 1;
+    border-bottom: 0;
+  }
+  .item__shorten {
+    flex: 0.3;
+  }
+  .btn__service {
+    flex: 0.2;
+  }
+
+  #main__information {
+    padding: 80px 0;
+  }
+  #info__title {
+    font-size: var(--font-large);
+  }
+  #info__description {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-medium);
+  }
+  #info__cards {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  #info__cards div:nth-child(2) {
+    margin-top: 30px;
+  }
+  #info__cards div:nth-child(3) {
+    margin-top: 60px;
+  }
+
+  #main__get_started {
+    height: 300px;
+    background-image: url("./images/bg-boost-desktop.svg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #main__get_started h1 {
+    font-size: var(--font-large);
+  }
+
+  #footer__wrap {
+    width: 1280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+  }
+  #footer__logo {
+    flex: 1;
+    text-align: left;
+  }
+  #footer__nav {
+    display: flex;
+    flex: 0.7;
+    text-align: left;
+  }
+  #footer__nav__wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  #footer__social__wrap {
+    width: auto;
+    flex: 0.3;
+  }
+  .attribution {
+    font-size: var(--font-micro);
+  }
 }

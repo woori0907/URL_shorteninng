@@ -49,7 +49,6 @@
     <!-- main -->
     <section id="main">
       <section id="main__banner" class="main__section">
-        <!-- <img src="./images/illustration-working.svg" alt="work illust" /> -->
         <div id="banner__img"></div>
         <div id="banner__description">
           <h1>More than just shorter links</h1>
@@ -67,7 +66,7 @@
             id="input__link"
             placeholder="Shorten a link here..."
           />
-          <button id="form__submit" class="btn__service">Shorten It!</button>
+          <button id="form__submit">Shorten It!</button>
         </form>
         <ul id="links__wrap"></ul>
       </section>
@@ -77,41 +76,48 @@
           Track how your links are performing across the web with our advanced
           statistics dashboard.
         </p>
-        <div class="info__card__wrap">
-          <div class="card__icon">
-            <img
-              src="./images/icon-brand-recognition.svg"
-              alt="recognition icon"
-            />
+        <div id="info__cards">
+          <div class="info__card__wrap">
+            <div class="card__icon">
+              <img
+                src="./images/icon-brand-recognition.svg"
+                alt="recognition icon"
+              />
+            </div>
+            <h3 class="card__title">Brand Recognition</h3>
+            <p class="card__description">
+              Boost your brand recognition with each click. Generic links don’t
+              mean a thing. Branded links help instil confidence in your
+              content.
+            </p>
           </div>
-          <h3 class="card__title">Brand Recognition</h3>
-          <p class="card__description">
-            Boost your brand recognition with each click. Generic links don’t
-            mean a thing. Branded links help instil confidence in your content.
-          </p>
-        </div>
-        <div class="info__card__wrap">
-          <div class="card__icon">
-            <img src="./images/icon-detailed-records.svg" alt="records icon" />
+          <div class="info__card__wrap">
+            <div class="card__icon">
+              <img
+                src="./images/icon-detailed-records.svg"
+                alt="records icon"
+              />
+            </div>
+            <h3 class="card__title">Detailed Records</h3>
+            <p class="card__description">
+              Gain insights into who is clicking your links. Knowing when and
+              where people engage with your content helps inform better
+              decisions.
+            </p>
           </div>
-          <h3 class="card__title">Detailed Records</h3>
-          <p class="card__description">
-            Gain insights into who is clicking your links. Knowing when and
-            where people engage with your content helps inform better decisions.
-          </p>
-        </div>
-        <div class="info__card__wrap">
-          <div class="card__icon">
-            <img
-              src="./images/icon-fully-customizable.svg"
-              alt="customizable icon"
-            />
+          <div class="info__card__wrap">
+            <div class="card__icon">
+              <img
+                src="./images/icon-fully-customizable.svg"
+                alt="customizable icon"
+              />
+            </div>
+            <h3 class="card__title">Fully Customizable</h3>
+            <p class="card__description">
+              Improve brand awareness and content discoverability through
+              customizable links, supercharging audience engagement.
+            </p>
           </div>
-          <h3 class="card__title">Fully Customizable</h3>
-          <p class="card__description">
-            Improve brand awareness and content discoverability through
-            customizable links, supercharging audience engagement.
-          </p>
         </div>
       </section>
       <section id="main__get_started" class="main__section">
@@ -121,52 +127,54 @@
     </section>
     <!-- footer -->
     <footer id="footer">
-      <div id="footer__logo" class="logo">Shortly</div>
-      <section id="footer__nav">
-        <ul id="footer__nav__wrap">
-          <li class="footer__nav__item">
-            <span class="item__title">Features</span>
-            <ul class="nav__sub_nav">
-              <li class="sub_nav__item">Link Shortening</li>
-              <li class="sub_nav__item">Branded Links</li>
-              <li class="sub_nav__item">Analytics</li>
-            </ul>
-          </li>
-          <li class="footer__nav__item">
-            <span class="item__title">Resources</span>
+      <div id="footer__wrap">
+        <div id="footer__logo" class="logo">Shortly</div>
+        <section id="footer__nav">
+          <ul id="footer__nav__wrap">
+            <li class="footer__nav__item">
+              <span class="item__title">Features</span>
+              <ul class="nav__sub_nav">
+                <li class="sub_nav__item">Link Shortening</li>
+                <li class="sub_nav__item">Branded Links</li>
+                <li class="sub_nav__item">Analytics</li>
+              </ul>
+            </li>
+            <li class="footer__nav__item">
+              <span class="item__title">Resources</span>
 
-            <ul class="nav__sub_nav">
-              <li class="sub_nav__item">Blog</li>
-              <li class="sub_nav__item">Developers</li>
-              <li class="sub_nav__item">Support</li>
-            </ul>
-          </li>
-          <li class="footer__nav__item">
-            <span class="item__title">Company</span>
+              <ul class="nav__sub_nav">
+                <li class="sub_nav__item">Blog</li>
+                <li class="sub_nav__item">Developers</li>
+                <li class="sub_nav__item">Support</li>
+              </ul>
+            </li>
+            <li class="footer__nav__item">
+              <span class="item__title">Company</span>
 
-            <ul class="nav__sub_nav">
-              <li class="sub_nav__item">About</li>
-              <li class="sub_nav__item">Our Team</li>
-              <li class="sub_nav__item">Careers</li>
-              <li class="sub_nav__item">Contact</li>
-            </ul>
+              <ul class="nav__sub_nav">
+                <li class="sub_nav__item">About</li>
+                <li class="sub_nav__item">Our Team</li>
+                <li class="sub_nav__item">Careers</li>
+                <li class="sub_nav__item">Contact</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <ul id="footer__social__wrap">
+          <li class="social__item">
+            <img src="./images/icon-facebook.svg" alt="facebook icon" />
+          </li>
+          <li class="social__item">
+            <img src="./images/icon-twitter.svg" alt="twitter icon" />
+          </li>
+          <li class="social__item">
+            <img src="./images/icon-pinterest.svg" alt="pinterest icon" />
+          </li>
+          <li class="social__item">
+            <img src="./images/icon-instagram.svg" alt="instagram icon" />
           </li>
         </ul>
-      </section>
-      <ul id="footer__social__wrap">
-        <li class="social__item">
-          <img src="./images/icon-facebook.svg" alt="facebook icon" />
-        </li>
-        <li class="social__item">
-          <img src="./images/icon-twitter.svg" alt="twitter icon" />
-        </li>
-        <li class="social__item">
-          <img src="./images/icon-pinterest.svg" alt="pinterest icon" />
-        </li>
-        <li class="social__item">
-          <img src="./images/icon-instagram.svg" alt="instagram icon" />
-        </li>
-      </ul>
+      </div>
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
