@@ -118,9 +118,31 @@ const handleSubmitForm = (e) => {
   linkShorten(e.target.value);
 };
 
+const isMobile = () => {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  );
+};
+
 const handleSubmitClick = (e) => {
   e.preventDefault();
   const inputValue = document.querySelector("#input__link");
+  const invalidMobile = document.querySelector("#invalid__mobile");
+  const invalidDesktop = document.querySelector("#invalid__desktop");
+  if (inputValue.value === "") {
+    inputValue.classList.add("invalid");
+    if (isMobile) {
+      invalidMobile.classList.add("visible");
+    } else {
+      invalidDesktop.classList.add("visible");
+    }
+    setTimeout(() => {
+      inputValue.classList.remove("invalid");
+      invalidMobile.classList.remove("visible");
+      invalidDesktop.classList.remove("visible");
+    }, 1500);
+    return;
+  }
   linkShorten(inputValue.value);
 };
 

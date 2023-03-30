@@ -78,12 +78,18 @@
       </section>
       <section id="main__service" class="main__section">
         <form id="form__link">
-          <input
-            type="url"
-            id="input__link"
-            placeholder="Shorten a link here..."
-          />
-          <button id="form__submit">Shorten It!</button>
+          <i class="message__invalid" id="invalid__mobile">Please add a link</i>
+          <div id="link__field">
+            <input
+              type="url"
+              id="input__link"
+              placeholder="Shorten a link here..."
+            />
+            <button id="form__submit">Shorten It!</button>
+          </div>
+          <i class="message__invalid" id="invalid__desktop"
+            >Please add a link</i
+          >
         </form>
         <ul id="links__wrap"></ul>
       </section>
