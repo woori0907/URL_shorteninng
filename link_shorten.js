@@ -59,6 +59,16 @@ const loadLocalStorage = () => {
 const handleCopyClick = (e) => {
   e.preventDefault();
   const copyUrl = e.target.previousSibling.textContent;
+  const copy_btn = document.querySelector(".btn__copy");
+
+  if (!copy_btn.classList.contains("active")) {
+    copy_btn.textContent = "Copied!";
+    copy_btn.classList.add("active");
+  }
+  setTimeout(() => {
+    copy_btn.textContent = "Copy";
+    copy_btn.classList.remove("active");
+  }, 1500);
   // 클립보드에 복사하는 api
   window.navigator.clipboard.writeText(copyUrl);
 };
@@ -76,13 +86,13 @@ const createShortenItem = (shortenUrl) => {
   shorten_span.setAttribute("href", shortenUrl.shorted_link);
   shorten_span.setAttribute("target", "_blank");
 
-  copy_btn.textContent = "copy";
+  copy_btn.textContent = "Copy";
   copy_btn.addEventListener("click", handleCopyClick);
 
   item.classList.add("link__item");
   origin_span.classList.add("item__origin");
   shorten_span.classList.add("item__shorten");
-  copy_btn.classList.add("btn__service");
+  copy_btn.classList.add("btn__service", "btn__copy");
 
   item.append(origin_span, shorten_span, copy_btn);
   linksList.appendChild(item);
